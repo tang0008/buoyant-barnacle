@@ -12,7 +12,7 @@
 
 
 
-<title>Lesson Title: Licenses</title>
+<title>Lesson Title: Blah Blah New Title</title>
 
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/cp/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/cp/apple-touch-icon-114x114.png" />
@@ -74,7 +74,7 @@
 
 
 
-<meta property="og:title" content="Licenses" />
+<meta property="og:title" content="Blah Blah New Title" />
 
 
 
@@ -204,41 +204,103 @@
 <div class="row">
   <div class="contents col-md-9">
     <div class="page-header">
-      <h1>Licenses</h1>
+      <h1>Blah Blah New Title</h1>
     </div>
 
-<div id="instructional-material" class="section level2">
-<h2>Instructional Material</h2>
-<p>All Software Carpentry, Data Carpentry, and Library Carpentry instructional material is made available under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>. The following is a human-readable summary of (and not a substitute for) the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">full legal text of the CC BY 4.0 license</a>.</p>
-<p>You are free:</p>
+<div class="section level2 objectives">
+<h2>Overview</h2>
+<div class="row">
+<div class="col-md-3">
+<p><strong>Teaching: </strong> 10<br />
+<strong>Exercises: </strong> 2</p>
+</div>
+<div class="col-md-9">
+<p><strong>Questions</strong></p>
 <ul>
-<li>to <strong>Share</strong>—copy and redistribute the material in any medium or format</li>
-<li>to <strong>Adapt</strong>—remix, transform, and build upon the material</li>
-</ul>
-<p>for any purpose, even commercially.</p>
-<p>The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
-<p>Under the following terms:</p>
-<ul>
-<li><strong>Attribution</strong>—You must give appropriate credit (mentioning that your work is derived from work that is Copyright © Software Carpentry and, where practical, linking to <a href="http://software-carpentry.org/" class="uri">http://software-carpentry.org/</a>), provide a <a href="https://creativecommons.org/licenses/by/4.0/">link to the license</a>, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>
-</ul>
-<p><strong>No additional restrictions</strong>—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. With the understanding that:</p>
-<p>Notices:</p>
-<ul>
-<li>You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.</li>
-<li>No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</li>
+<li>How do you write a lesson using RMarkdown and <code>{sandpaper}</code>?</li>
 </ul>
 </div>
-<div id="software" class="section level2">
-<h2>Software</h2>
-<p>Except where otherwise noted, the example programs and other software provided by Software Carpentry and Data Carpentry are made available under the <a href="https://opensource.org">OSI</a>-approved <a href="https://opensource.org/licenses/mit-license.html">MIT license</a>.</p>
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 </div>
-<div id="trademark" class="section level2">
-<h2>Trademark</h2>
-<p>“Software Carpentry” and “Data Carpentry” and their respective logos are registered trademarks of <a href="http://communityin.org/">Community Initiatives</a>.</p>
+<div class="row">
+<div class="col-md-3">
+
 </div>
+<div class="col-md-9">
+<p><strong>Objectives</strong></p>
+<ul>
+<li>Explain how to use markdown with the new lesson template</li>
+<li>Demonstrate how to include pieces of code, figures, and nested challenge blocks</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>This is the new Carpentries template. It is written in <a href="https://rmarkdown.rstudio.com/">RMarkdown</a>, which is a variant of Markdown that allows you to render code inside the lesson. Please refer to the <a href="https://carpentries.github.io/lesson-example">lesson example</a> for full documentation.</p>
+<p>What you need to know is that there are three block quotes required for a valid Carpentries lesson template:</p>
+<ol style="list-style-type: decimal">
+<li><code>questions</code> are displayed at the beginning of the episode to prime the learner for the content.</li>
+<li><code>objectives</code> are the learning objectives for an episode displayed with the questions.</li>
+<li><code>keypoints</code> are displayed at the end of the episode to reinforce the objectives.</li>
+</ol>
+</div>
+<div class="challenge">
+<div id="challenge-1-can-you-do-it" class="section level2">
+<h2>Challenge 1: Can you do it?</h2>
+<p>What is the output of this command?</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">&quot;This&quot;</span>, <span class="st">&quot;new&quot;</span>, <span class="st">&quot;template&quot;</span>, <span class="st">&quot;looks&quot;</span>, <span class="st">&quot;good&quot;</span>)</span></code></pre></div>
+</div>
+<div id="output" class="section level2 solution">
+<h2>Output</h2>
+<pre class="output"><code>[1] &quot;This new template looks good&quot;</code></pre>
+</div>
+<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="section level2">
+<h2>Challenge 2: how do you nest solutions within challenge blocks?</h2>
+</div>
+<div class="section level2 solution">
+<h2>Solution</h2>
+<p>You can add a line with at least three colons and a <code>solution</code> tag.</p>
+</div>
+</div>
+<div id="challenge-3-use-sessioninfo-to-print-the-session-information-of-their-r-instance." class="section level2 challenge">
+<h2>Challenge 3: use sessionInfo() to print the session information of their R instance.</h2>
+</div>
+<div id="figures" class="section level2">
+<h2>Figures</h2>
+<p>You can also include figures generated from RMarkdown:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pie</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="at">Sky =</span> <span class="dv">78</span>, <span class="st">&quot;Sunny side of pyramid&quot;</span> <span class="ot">=</span> <span class="dv">17</span>, <span class="st">&quot;Shady side of pyramid&quot;</span> <span class="ot">=</span> <span class="dv">5</span>), </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">init.angle =</span> <span class="dv">315</span>, </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;deepskyblue&quot;</span>, <span class="st">&quot;yellow&quot;</span>, <span class="st">&quot;yellow3&quot;</span>), </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">border =</span> <span class="cn">FALSE</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div class="figure" style="text-align: center">
+<img src="fig/02-next-episode-rendered-pyramid-1.png" alt="pie chart illusion of a pyramid"  />
+<p class="caption">
+Sun arise each and every morning
+</p>
+</div>
+<p>Or you can use standard markdown for static figures:</p>
+<div class="figure">
+<img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." alt="" />
+<p class="caption">You belong in The Carpentries!</p>
+</div>
+</div>
+<div id="math" class="section level2">
+<h2>Math</h2>
+<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to create dynamic reports with {knitr}, so we now use mathjax to describe this:</p>
+<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
+<p>Cool, right?</p>
+</div>
+<div class="section level2 keypoints">
+<h2>Keypoints</h2>
+<ul>
+<li>Use <code>.Rmd</code> files for lessons even if you don’t need to generate any code</li>
+<li>Run <code>sandpaper::check_lesson()</code> to identify any issues with your lesson</li>
+<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson locally</li>
+</ul>
+</div>
+<!-- Please do not delete anything below this line -->
 
   </div>
 
@@ -260,7 +322,7 @@
   <div class="row">
     <div class="col-xs-1">
       <h3 class="text-left">
-        <a href="index.html"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+        <a href="01-introduction.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
       </h3>
     </div>
     <div class="col-xs-10">
@@ -281,7 +343,7 @@
       by <a href="https://softwarecarpentry.org">Software Carpentry Foundation</a>
     </div>
     <div class="col-md-6 help-links pull-right" align="right">
-      <a href="/edit/main/LICENSE.md" data-checker-ignore>Edit on GitHub</a>
+      <a href="/edit/main/episodes/02-next-episode.Rmd" data-checker-ignore>Edit on GitHub</a>
       /
       <a href="/blob/main/CONTRIBUTING.md" data-checker-ignore>Contributing</a>
       /
